@@ -1,6 +1,9 @@
 <!doctype html>
 <head>
-<title>NeonOatmeal</title>
+        <title>NeonOatmeal</title>
+        <a href="{{ url_for('home') }}">Home</a>
+        <a href="{{ url_for('login') }}">Login</a>
+        <a href="{{ url_for('signup') }}">Signup</a>
 </head>
 <body>
     {% block content %}{% endblock %}

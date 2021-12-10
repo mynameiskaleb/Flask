@@ -7,22 +7,23 @@
     <form action="" method="post" novalidate>
         <h1>Signup</h1>
         <p>
-            {{ signupform.username.label }}<br>
-            {{ signupform.username(size=32) }}<br>
+            {{ form.username.label }}<br>
+            {{ form.username(size=32) }}<br>
         </p>
         <p>
-            {{ signupform.password.label }}<br>
-            {{ signupform.password(size=32) }}<br>
+            {{ form.password.label }}<br>
+            {{ form.password(size=32) }}<br>
         </p>
         <p>
-            {{ signupform.password_verify.label }}<br>
-            {{ signupform.password_verify(size=32) }}<br>
+            {{ form.password_verify.label }}<br>
+            {{ form.password_verify(size=32) }}<br>
         </p>
         <p>
-            {{ signupform.email_address.label }}<br>
-            {{ signupform.email_address(size=32) }}<br>
+            {{ form.email_address.label }}<br>
+            {{ form.email_address(size=32) }}<br>
         </p>
-        <p>{{ signupform.submit() }}</p>
+        <p>{{ form.submit() }}</p><br>
+        <p><a href="/login">Login</a></p>
     </div>
 </body>
 {% endblock %}
